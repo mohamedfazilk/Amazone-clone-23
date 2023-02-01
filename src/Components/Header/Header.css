@@ -33,6 +33,34 @@
     padding: 10px;
     border: navajowhite;
     width: 100%;
+}
 
+.header_nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.header_option{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.header_optionOne{
+    font-size: 10px;
+}
+.header_optionTwo{
+    font-size: 13px;
+    font-weight: 800;
+}
+.header_optionbasket{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.header_basketcount{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
