@@ -15,7 +15,7 @@ const Home = () => {
                      id="4903850"
                         image="https://m.media-amazon.com/images/I/51T-sMqSMiL._SX329_BO1,204,203,200_.jpg" alt=""
                         price={19.99}
-                        rating={3}
+                        rating={2}
                     />
                     <Product
                         id="49538094"
