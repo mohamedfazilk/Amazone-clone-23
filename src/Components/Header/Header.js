@@ -20,6 +20,7 @@ const Header = () => {
             </div>
 
             <div className='header_nav'>
+                <Link to='/login'>
                 <div className="header_option">
                     <span className='header_optionOne'>
                         Hello Guest
@@ -27,8 +28,9 @@ const Header = () => {
                     <span className='header_optionTwo'>
                         Sign In
                     </span>
-
                 </div>
+                </Link>
+                
                 <div className="header_option">
                     <span className='header_optionOne'>
                         Returns
