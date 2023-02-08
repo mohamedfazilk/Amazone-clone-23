@@ -12,8 +12,9 @@ const Checkout = () => {
       <div className="checkout__left">
         <img className='checkout__ad' src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg" alt="" />
 
+        <h3>Hello {!user ? '' : user.email}</h3>
         <div className="checkout__title">
-          <h3>Hello {user.email}</h3>
+        
           <h2> Your shopping Basket</h2>
 
           <CheckoutProduct
