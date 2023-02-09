@@ -17,20 +17,6 @@ const Checkout = () => {
         
           <h2> Your shopping Basket</h2>
 
-          <CheckoutProduct
-            id='112342'
-            title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
-            image='https://m.media-amazon.com/images/I/51T-sMqSMiL._SX329_BO1,204,203,200_.jpg'
-            price={19.99}
-            rating={5} />
-
-          <CheckoutProduct
-            id='112342'
-            title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
-            image='https://m.media-amazon.com/images/I/51T-sMqSMiL._SX329_BO1,204,203,200_.jpg'
-            price={19.99}
-            rating={5} />
-
 
           {basket.map(item => (
             <CheckoutProduct
