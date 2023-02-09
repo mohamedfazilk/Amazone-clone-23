@@ -1,5 +1,6 @@
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
-import React, { useState } from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
 import CurrencyFormat from 'react-currency-format';
 import { Link } from 'react-router-dom';
 import CheckoutProduct from '../CheckoutProduct/CheckoutProduct';
@@ -8,15 +9,42 @@ import { useStateValue } from '../StateProvider';
 import './Payment.css'
 
 const Payment = () => {
+    const [{ basket, user }, dispatch] = useStateValue();
 
-    const [disable, setDisabled] = useState(true)
-    const [error, setError] = useState(null);
     const stripe = useStripe();
     const elements = useElements()
 
-    const handleSubmit = (e => {
-        //
-    })
+    const [clientSecret, setClientSecret] = useState(true);
+    const [succeeded, setSucceeded] = useState(false);
+    const[processing, setProcessing] = useState("")
+    const [disabled, setDisabled] = useState(true)
+    const [error, setError] = useState(null);
+  
+    useEffect(()=>{
+        // generate the special stripe which allows us to charge
+        //a customer 
+        const getClientSecret = async() =>{
+            const response = await axios({
+                method: 'post',
+                //stripe expects the total ina currencies subunits
+                url:`/payments/create/?total=${getBasketTotal(basket) * 100}`
+            })
+
+            setClientSecret(response.data.clientSecret)
+
+        }
+        getClientSecret();;
+    },[basket])
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setProcessing(true);
+        const payload = await stripe.confirmCardPayment(clientSecret,
+            {payment_method:{
+                
+            }
+            }) 
+    }
 
     const handleChange = (e => {
         //Listen for changes in the cardElement
@@ -25,7 +53,7 @@ const Payment = () => {
         setError(e.error ? e.error.message : "");
     })
 
-    const [{ basket, user }, dispatch] = useStateValue();
+  
     return (
         <div className='payment'>
             <div className="payment_container">
@@ -81,7 +109,13 @@ const Payment = () => {
                                     thousandSeparator={true}
                                     prefix={"$"}
                                 />
+                                <button disabled={processing || disabled 
+                                    || succeeded}>
+                                        <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
+                                    </button>
                             </div>
+
+                            {error && <div>{error}</div>}
                         </form>
                     </div>
                 </div>
