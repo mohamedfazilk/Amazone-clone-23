@@ -1,0 +1,1082 @@
+[debug] [2023-02-10T10:44:13.244Z] ----------------------------------------------------------------------
+[debug] [2023-02-10T10:44:13.247Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-02-10T10:44:13.247Z] CLI Version:   11.22.0
+[debug] [2023-02-10T10:44:13.247Z] Platform:      win32
+[debug] [2023-02-10T10:44:13.248Z] Node Version:  v18.10.0
+[debug] [2023-02-10T10:44:13.249Z] Time:          Fri Feb 10 2023 16:14:13 GMT+0530 (India Standard Time)
+[debug] [2023-02-10T10:44:13.250Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-10T10:44:13.516Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-10T10:44:13.517Z] > authorizing via signed-in user (mohamedfazil961@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2023-02-10T10:44:13.534Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-02-10T10:44:13.535Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-02-10T10:44:13.535Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-02-10T10:44:13.545Z] [hub] writing locator at C:\Users\DELL\AppData\Local\Temp\hub-e-challenge-66492.json
+[debug] [2023-02-10T10:44:13.582Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-02-10T10:44:13.583Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-02-10T10:44:13.583Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2023-02-10T10:44:13.594Z] defaultcredentials: writing to file C:\Users\DELL\AppData\Roaming\firebase\mohamedfazil961_gmail_com_application_default_credentials.json
+[debug] [2023-02-10T10:44:13.616Z] Setting GAC to C:\Users\DELL\AppData\Roaming\firebase\mohamedfazil961_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\DELL\\AppData\\Roaming\\firebase\\mohamedfazil961_gmail_com_application_default_credentials.json"}}
+[debug] [2023-02-10T10:44:13.619Z] > refreshing access token with scopes: []
+[debug] [2023-02-10T10:44:13.623Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-02-10T10:44:13.623Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-02-10T10:44:13.899Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-02-10T10:44:13.900Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-02-10T10:44:13.936Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-challenge-66492/adminSdkConfig [none]
+[debug] [2023-02-10T10:44:14.390Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/e-challenge-66492/adminSdkConfig 200
+[debug] [2023-02-10T10:44:14.391Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/e-challenge-66492/adminSdkConfig {"projectId":"e-challenge-66492","storageBucket":"e-challenge-66492.appspot.com"}
+[debug] [2023-02-10T10:44:14.451Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/e-challenge-66492/sites 
+[debug] [2023-02-10T10:44:15.420Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/e-challenge-66492/sites 200
+[debug] [2023-02-10T10:44:15.421Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/e-challenge-66492/sites {"sites":[{"name":"projects/e-challenge-66492/sites/e-challenge-66492","defaultUrl":"https://e-challenge-66492.web.app","appId":"1:319120965755:web:a7a9785c7a31627d2222de","type":"DEFAULT_SITE"}]}
+[debug] [2023-02-10T10:44:15.421Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-challenge-66492/webApps/1:319120965755:web:a7a9785c7a31627d2222de/config [none]
+[debug] [2023-02-10T10:44:16.758Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/e-challenge-66492/webApps/1:319120965755:web:a7a9785c7a31627d2222de/config 200
+[debug] [2023-02-10T10:44:16.758Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/e-challenge-66492/webApps/1:319120965755:web:a7a9785c7a31627d2222de/config {"projectId":"e-challenge-66492","appId":"1:319120965755:web:a7a9785c7a31627d2222de","storageBucket":"e-challenge-66492.appspot.com","apiKey":"AIzaSyAJ9-Nx75AJu5t5ePzlbd0gmq6RJBHnork","authDomain":"e-challenge-66492.firebaseapp.com","messagingSenderId":"319120965755","measurementId":"G-0ZPYK03ZVN"}
+[debug] [2023-02-10T10:44:16.800Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-challenge-66492 [none]
+[debug] [2023-02-10T10:44:17.218Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/e-challenge-66492 200
+[debug] [2023-02-10T10:44:17.218Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/e-challenge-66492 {"projectId":"e-challenge-66492","projectNumber":"319120965755","displayName":"Amazone-Challenge","name":"projects/e-challenge-66492","resources":{"hostingSite":"e-challenge-66492"},"state":"ACTIVE","etag":"1_57145348-7134-45cf-8bf0-cf4482fe786a"}
+[info] i  hosting[e-challenge-66492]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[e-challenge-66492]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[info] i  ui: downloading ui-v1.11.2.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.11.2.zip..."}}
+[debug] [2023-02-10T10:44:17.314Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.2.zip 
+[debug] [2023-02-10T10:44:17.735Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.2.zip 200
+[debug] [2023-02-10T10:44:17.735Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.2.zip [stream]
+[debug] [2023-02-10T10:44:22.878Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-02-10T10:44:22.879Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-02-10T10:44:22.880Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\DELL\\.cache\\firebase\\emulators\\ui-v1.11.2\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\DELL\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.2\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-02-10T10:44:23.268Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-02-10T10:44:23.268Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\DELL\projects-oct\amazone-clone23\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\" for Cloud Functions..."}}
+[debug] [2023-02-10T10:44:23.444Z] Validating nodejs source
+[debug] [2023-02-10T10:44:33.777Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:857:24)
+    at Function.spawnSync [as sync] (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:55:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:76:32)
+    at Delegate.validate (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:291:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:320:34)
+    at async FunctionsEmulator.connect (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:257:13)
+    at async Object.startAll (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js:547:13)
+    at async C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\emulators-start.js:32:43
+[debug] [2023-02-10T10:44:33.780Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:44:33.781Z] Building nodejs source
+[debug] [2023-02-10T10:44:33.782Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:44:33.795Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:44:33.967Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:44:41.030Z] Serving at port 8093
+
+[debug] [2023-02-10T10:44:41.322Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T10:44:41.331Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-02-10T10:51:20.336Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:20.716Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:21.110Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:21.565Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:21.734Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:21.910Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:22.913Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:51:25.012Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:51:25.012Z] Building nodejs source
+[debug] [2023-02-10T10:51:25.013Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:51:25.017Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:51:25.030Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:51:25.041Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:25.320Z] Serving at port 8377
+
+[debug] [2023-02-10T10:51:25.480Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T10:51:25.488Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-02-10T10:51:26.049Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:51:27.720Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:51:27.720Z] Building nodejs source
+[debug] [2023-02-10T10:51:27.720Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:51:27.722Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:51:27.731Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:51:27.745Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:28.043Z] Serving at port 8004
+
+[debug] [2023-02-10T10:51:28.198Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T10:51:28.207Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-02-10T10:51:28.752Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:51:30.338Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:51:30.338Z] Building nodejs source
+[debug] [2023-02-10T10:51:30.338Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:51:30.340Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:51:30.348Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:51:30.363Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:30.627Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:30.782Z] Serving at port 8364
+
+[debug] [2023-02-10T10:51:30.949Z] Got response from /__/functions.yaml Failed to generate manifest from function source: ReferenceError: req is not defined
+[debug] [2023-02-10T10:51:30.952Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:
+     ...  function source: ReferenceError: req is not defined
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: ReferenceError: req is not defined\n\u0000","position":64,"line":0,"column":64},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:\n     ...  function source: ReferenceError: req is not defined\n                                         ^"}
+[debug] [2023-02-10T10:51:30.965Z] shutdown requested via /__/quitquitquit
+
+[debug] [2023-02-10T10:51:30.970Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: req is not defined {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: req is not defined"}}
+[debug] [2023-02-10T10:51:31.273Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:31.654Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:32.669Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:51:34.376Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:51:34.377Z] Building nodejs source
+[debug] [2023-02-10T10:51:34.377Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:51:34.379Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:51:34.388Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:51:34.414Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:34.841Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:34.877Z] Serving at port 8247
+
+[debug] [2023-02-10T10:51:35.021Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:35.104Z] Got response from /__/functions.yaml Failed to generate manifest from function source: ReferenceError: r is not defined
+[debug] [2023-02-10T10:51:35.104Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:
+     ...  function source: ReferenceError: r is not defined
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: ReferenceError: r is not defined\n\u0000","position":64,"line":0,"column":64},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:\n     ...  function source: ReferenceError: r is not defined\n                                         ^"}
+[debug] [2023-02-10T10:51:35.112Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: r is not defined {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: r is not defined"}}
+[debug] [2023-02-10T10:51:35.279Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:35.458Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:35.537Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:35.631Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:36.327Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:36.449Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:37.466Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:51:39.083Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:51:39.083Z] Building nodejs source
+[debug] [2023-02-10T10:51:39.084Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:51:39.086Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:51:39.099Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:51:39.401Z] Serving at port 8187
+
+[debug] [2023-02-10T10:51:39.527Z] Got response from /__/functions.yaml Failed to generate manifest from function source: Error: Route.get() requires a callback function but got a [object Object]
+[debug] [2023-02-10T10:51:39.527Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 56:
+     ... fest from function source: Error: Route.get() requires a callbac ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: Error: Route.get() requires a callback function but got a [object Object]\n\u0000","position":55,"line":0,"column":55},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 56:\n     ... fest from function source: Error: Route.get() requires a callbac ... \n                                         ^"}
+[debug] [2023-02-10T10:51:39.534Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error: Route.get() requires a callback function but got a [object Object] {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error: Route.get() requires a callback function but got a [object Object]"}}
+[debug] [2023-02-10T10:51:39.812Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:40.196Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:40.619Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:41.632Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:51:43.303Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:51:43.303Z] Building nodejs source
+[debug] [2023-02-10T10:51:43.303Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:51:43.306Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:51:43.316Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:51:43.330Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:43.733Z] Serving at port 8297
+
+[debug] [2023-02-10T10:51:43.736Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:43.846Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:43.952Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:43.982Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T10:51:43.994Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-02-10T10:51:44.195Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:44.769Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:45.094Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:46.098Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:51:47.761Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:51:47.761Z] Building nodejs source
+[debug] [2023-02-10T10:51:47.761Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:51:47.763Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:51:47.768Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:51:47.778Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:48.108Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:48.189Z] Serving at port 8342
+
+[debug] [2023-02-10T10:51:48.408Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T10:51:48.419Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-02-10T10:51:49.116Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:51:50.798Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:51:50.799Z] Building nodejs source
+[debug] [2023-02-10T10:51:50.799Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:51:50.801Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:51:50.808Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:51:50.820Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:51.060Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:51.222Z] Serving at port 8614
+
+[debug] [2023-02-10T10:51:51.243Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:51.386Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:51.443Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T10:51:51.453Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-02-10T10:51:52.397Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:51:54.006Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:51:54.006Z] Building nodejs source
+[debug] [2023-02-10T10:51:54.006Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:51:54.008Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:51:54.017Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:51:54.030Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:54.339Z] Serving at port 8921
+
+[debug] [2023-02-10T10:51:54.374Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token ')'
+[debug] [2023-02-10T10:51:54.375Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token ')'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token ')'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token ')'\n                                         ^"}
+[debug] [2023-02-10T10:51:54.380Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')'"}}
+[debug] [2023-02-10T10:51:54.672Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:54.879Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:55.882Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:51:57.640Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:51:57.640Z] Building nodejs source
+[debug] [2023-02-10T10:51:57.641Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:51:57.645Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:57.646Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:51:57.660Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:51:57.696Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:57.988Z] Serving at port 8516
+
+[debug] [2023-02-10T10:51:58.147Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T10:51:58.155Z] shutdown requested via /__/quitquitquit
+
+[debug] [2023-02-10T10:51:58.188Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-02-10T10:51:58.571Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:58.949Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:51:59.951Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:52:01.838Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:52:01.838Z] Building nodejs source
+[debug] [2023-02-10T10:52:01.838Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:52:01.841Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:52:01.850Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:52:02.153Z] Serving at port 8121
+
+[debug] [2023-02-10T10:52:02.285Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T10:52:02.294Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-02-10T10:52:08.652Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:09.666Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:52:11.344Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:52:11.345Z] Building nodejs source
+[debug] [2023-02-10T10:52:11.345Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:52:11.347Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:52:11.360Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:52:11.649Z] Serving at port 8500
+
+[debug] [2023-02-10T10:52:11.806Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T10:52:11.814Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-02-10T10:52:27.762Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:27.894Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:28.080Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:28.197Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:28.402Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:29.413Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:52:30.970Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:52:30.971Z] Building nodejs source
+[debug] [2023-02-10T10:52:30.971Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:52:30.973Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:52:30.983Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:52:31.282Z] Serving at port 8253
+
+[debug] [2023-02-10T10:52:31.414Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T10:52:31.422Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-02-10T10:52:41.839Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:42.691Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:42.900Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:43.118Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:43.267Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:43.445Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:43.683Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:43.871Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:44.883Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:52:46.789Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:52:46.790Z] Building nodejs source
+[debug] [2023-02-10T10:52:46.790Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:52:46.792Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:52:46.804Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:52:46.816Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:46.915Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:47.156Z] Serving at port 8387
+
+[debug] [2023-02-10T10:52:47.171Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected end of input
+[debug] [2023-02-10T10:52:47.172Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected end of input
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected end of input\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected end of input\n                                         ^"}
+[debug] [2023-02-10T10:52:47.176Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected end of input {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected end of input"}}
+[debug] [2023-02-10T10:52:47.389Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:47.897Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:48.088Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:48.351Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:48.477Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:49.493Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:52:51.322Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:52:51.326Z] Building nodejs source
+[debug] [2023-02-10T10:52:51.327Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:52:51.328Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:52:51.336Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:52:51.350Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:51.493Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:51.725Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:51.726Z] Serving at port 8309
+
+[debug] [2023-02-10T10:52:51.893Z] Got response from /__/functions.yaml Failed to generate manifest from function source: ReferenceError: funx is not defined
+[debug] [2023-02-10T10:52:51.894Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:
+     ...  function source: ReferenceError: funx is not defined
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: ReferenceError: funx is not defined\n\u0000","position":64,"line":0,"column":64},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:\n     ...  function source: ReferenceError: funx is not defined\n                                         ^"}
+[debug] [2023-02-10T10:52:51.899Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: funx is not defined {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: funx is not defined"}}
+[debug] [2023-02-10T10:52:52.568Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:53.419Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:53.631Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:54.634Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:52:56.546Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:52:56.546Z] Building nodejs source
+[debug] [2023-02-10T10:52:56.546Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:52:56.548Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:52:56.557Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:52:56.568Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:56.861Z] Serving at port 8008
+
+[debug] [2023-02-10T10:52:57.004Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T10:52:57.017Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-02-10T10:52:57.257Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:57.356Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:52:58.371Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:53:00.045Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:53:00.046Z] Building nodejs source
+[debug] [2023-02-10T10:53:00.046Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:53:00.048Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:53:00.059Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:53:00.072Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:53:00.401Z] Serving at port 8050
+
+[debug] [2023-02-10T10:53:00.553Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T10:53:00.561Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-02-10T10:53:01.079Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:53:02.665Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:53:02.665Z] Building nodejs source
+[debug] [2023-02-10T10:53:02.665Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:53:02.667Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:53:02.676Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:53:02.692Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:53:02.984Z] Serving at port 8338
+
+[debug] [2023-02-10T10:53:03.133Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T10:53:03.141Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-02-10T10:53:03.696Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:53:05.555Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:53:05.555Z] Building nodejs source
+[debug] [2023-02-10T10:53:05.555Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:53:05.557Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:53:05.563Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:53:05.573Z] File C:\Users\DELL\projects-oct\amazone-clone23\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\projects-oct\\amazone-clone23\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-02-10T10:53:05.939Z] Serving at port 8707
+
+[debug] [2023-02-10T10:53:06.075Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T10:53:06.083Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/e-challenge-66492/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/e-challenge-66492/us-central1/api)."}}
+[debug] [2023-02-10T10:53:06.576Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-10T10:53:08.256Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T10:53:08.257Z] Building nodejs source
+[debug] [2023-02-10T10:53:08.257Z] Failed to find version of module node: reached end of search path C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2023-02-10T10:53:08.259Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T10:53:08.267Z] Found firebase-functions binary at 'C:\Users\DELL\projects-oct\amazone-clone23\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-02-10T10:53:08.591Z] Serving at port 8242
+
+[debug] [2023-02-10T10:53:08.719Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T10:53:08.727Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
